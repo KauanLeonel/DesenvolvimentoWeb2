@@ -1,0 +1,23 @@
+{
+  "name": "api-backend",
+  "version": "1.0.0",
+  "description": "Projeto Node com Express para construir API backEnd",
+  "main": "src/server.js",
+  "type":"module", 
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
+  },
+  "keywords": [
+    "API",
+    "Express",
+    "Prisma",
+    "BackEnd"
+  ],
+  "author": "KauanLeonel",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
