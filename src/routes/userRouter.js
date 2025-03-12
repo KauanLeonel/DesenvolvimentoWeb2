@@ -1,6 +1,6 @@
 import express from "express"
-import getUserController from "../controllers/user/createUserController" //ERRO AQUi
-import createUserController from "../controllers/user/createUserController" //ERRO AQUI
+import getUserController from "../controllers/user/createUserController.js" 
+import createUserController from "../controllers/user/createUserController.js"
 const router = express.Router()
 
 
