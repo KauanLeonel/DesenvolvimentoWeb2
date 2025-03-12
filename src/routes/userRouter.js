@@ -1,27 +1,13 @@
 import express from "express"
+import getUserController from "../controllers/user/createUserController" //ERRO AQUi
+import createUserController from "../controllers/user/createUserController" //ERRO AQUI
 const router = express.Router()
 
 
 
-router.get("/", (req, res) =>{
-    res.json({
-        name: "Kauan",
-        email: "pinkFloyd@gmail.com",
-        id: 1,
-        avatar: 'http://github.com/KauanLeonel.png'
-    })
-})
+router.get("/:id", createUserController)
 
-router.post("/", (req, res) =>{
-    res.json({
-        message: "Usuário criado com sucesso", user:{
-            name: "Kauan",
-        email: "pinkFloyd@gmail.com",
-        id: 1,
-        avatar: 'http://github.com/KauanLeonel.png'
-        } 
-    })
-})
+router.post("/", getUserController)
 
 router.put("/", (req, res) =>{
     res.json({
