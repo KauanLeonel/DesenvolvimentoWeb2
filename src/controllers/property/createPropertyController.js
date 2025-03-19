@@ -1,11 +1,15 @@
-export default function createPropertyController(req, res) {
+import { create } from "../../models/propertyModel.js";
+export default async function createPropertyController(req, res) {
 
     const property = req.body;
 
-    //todo valisar e inserir no BD
+    //TODO validar
+    const result = await create(property)
+
+
     return res.json({
         message: "imóvel criado com sucesso",
-        property: property
+        property: result
     }
     )
 }

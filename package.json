@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Projeto Node com Express para construir API backEnd",
   "main": "src/server.js",
-  "type":"module", 
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src/server.js",
@@ -18,6 +18,10 @@
   "author": "KauanLeonel",
   "license": "ISC",
   "dependencies": {
+    "@prisma/client": "^6.5.0",
     "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "prisma": "^6.5.0"
   }
 }
