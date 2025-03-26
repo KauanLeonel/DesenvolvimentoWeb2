@@ -6,13 +6,15 @@ import deletePropertyController from "../controllers/property/deletePropertyCont
 import patchPropertyController from "../controllers/property/changeTypePropertyController.js"
 const router = express.Router()
 
-router.get("/", getPropertyController)
+router.get("/list", getPropertyController)
+
+router.get("/:id", () => {})
 
 router.post("/", createPropertyController)
 
-router.put("/", putPropertyController)
+router.put("/:id", putPropertyController)
 
-router.delete("/", deletePropertyController)
+router.delete("/:id", deletePropertyController)
 
 
 const obj = ["name", "email", "id", "avatar"]
