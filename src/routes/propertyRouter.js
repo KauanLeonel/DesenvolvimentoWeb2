@@ -14,7 +14,7 @@ router.post("/", createPropertyController)
 
 router.put("/:id", putPropertyController)
 
-router.delete("/:id", deletePropertyController)
+router.delete('/:id', deletePropertyController)
 
 
 const obj = ["name", "email", "id", "avatar"]
